@@ -1,0 +1,31 @@
+{
+    "Direct": {
+        "prompt": "以下のテキストと表を読み、質問に答えてください\nいくつかの例を紹介します:\n\n---\n\n{examples}\n\n---\n\n上記の例に基づいて、次の質問に答えてください。\n回答は次のように表現してください：「回答: <あなたの回答>」\n\n{example_user}",
+        "example": "{text}\n{table}\n質問: {question}\n回答: {answer}",
+        "user": "{text}\n{table}\n質問: {question}"
+    },
+    "CoT": {
+        "prompt": "以下のテキストと表を読み、質問に答えてください\nいくつかの例を紹介します:\n\n---\n\n{examples}\n\n---\n\n上記の例に基づいて、次の質問に答えてください。\n回答は次のように表現してください：「説明: <あなたの説明>\n回答: <あなたの回答>」\n\n{example_user}",
+        "example": "{text}\n{table}\n質問: {question}\n説明: {explanation}\n回答: {answer}",
+        "user": "{text}\n{table}\n質問: {question}"
+    },
+    "PoT": {
+        "prompt": "以下のテキストと表を読み、質問に答えるためのPythonコードを書いてください\nいくつかの例を紹介します:\n\n---\n\n{examples}\n\n---\n\n上記の例に基づいて、Pythonコードで次の質問に答えてください。\n回答は次のように表現してください：「回答: <あなたの回答>」\n\n{example_user}",
+        "example": "{text}\n{table}\n質問: {question}\n回答:\n```python\n{answer}\n```",
+        "user": "{text}\n{table}\n質問: {question}"
+    },
+    "Decompose": {
+        "prompt": [
+            "質問に応じて日本語で考え、テキストや表から関連情報を見つけてください。\nここにいくつかの例があります：\n\n---\n\n{examples}\n\n---\n\n上記の例に基づいて、質問を分析してください。\n追加の計算を行わず、関連情報を見つけるだけで十分です。\n\n{example_user}",
+            "関連情報に基づいて、日本語で考え、質問に答えるPythonコードを書いてください。\nここにいくつかの例があります：\n\n---\n\n{examples}\n\n---\n\n上記の例に基づいて、Pythonコードで質問に答えてください。\n以下に注意してください：\n1. 数字に加えて、日本語で答えるようにしてください。\n2. 短い回答にして、文の数を減らしてください。\n3. マイナス記号の可能性に注意してください。\n4. 答えを直接返すのではなく、必ずPythonコードを生成してください。\n回答を次のように表現してください：\"ans = <your answer>\"\n\n{example_user}"
+        ],
+        "example": [
+            "{text}\n{table}\n質問: {question}\n{answer}\n",
+            "{text}\n{table}\n質問: {question}\n```python\n{answer}\n```"
+        ],
+        "user": [
+            "{text}\n{table}\n質問: {question}",
+            "{text}\n{table}\n質問: {question}"
+        ]
+    }
+}

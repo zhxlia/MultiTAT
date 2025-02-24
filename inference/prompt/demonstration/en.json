@@ -1,0 +1,352 @@
+[
+    {
+        "table": {
+            "content": [
+                [
+                    "Year Ended December 31,",
+                    "",
+                    ""
+                ],
+                [
+                    "",
+                    "2019",
+                    "2018"
+                ],
+                [
+                    "Asia Pacific",
+                    "",
+                    ""
+                ],
+                [
+                    "Travel",
+                    "$6,274",
+                    "$7,351"
+                ],
+                [
+                    "Local",
+                    "216",
+                    "508"
+                ],
+                [
+                    "Total Asia Pacific revenues",
+                    "6,490",
+                    "7,859"
+                ],
+                [
+                    "Europe",
+                    "",
+                    ""
+                ],
+                [
+                    "Travel",
+                    "32,081",
+                    "30,856"
+                ],
+                [
+                    "Local",
+                    "4,817",
+                    "5,293"
+                ],
+                [
+                    "Total Europe revenues",
+                    "36,898",
+                    "36,149"
+                ],
+                [
+                    "North America",
+                    "",
+                    ""
+                ],
+                [
+                    "Travel",
+                    "57,863",
+                    "56,145"
+                ],
+                [
+                    "Local",
+                    "10,161",
+                    "11,169"
+                ],
+                [
+                    "Total North America revenues",
+                    "68,024",
+                    "67,314"
+                ],
+                [
+                    "Consolidated",
+                    "",
+                    ""
+                ],
+                [
+                    "Travel",
+                    "96,218",
+                    "94,352"
+                ],
+                [
+                    "Local",
+                    "15,194",
+                    "16,970"
+                ],
+                [
+                    "Total revenues",
+                    "$111,412",
+                    "111,322"
+                ]
+            ]
+        },
+        "text": {
+            "paragraph": [
+                "The following table sets forth the breakdown of revenues by category and segment. Travel revenue includes travel publications (Top 20, Website, Newsflash, Travelzoo Network), Getaway vouchers and hotel platform. Local revenue includes Local Deals vouchers and entertainment offers (vouchers and direct bookings) (in thousands).",
+                "Revenue by geography is based on the billing address of the advertiser. Long-lived assets attributed to the U.S. and international geographies are based upon the country in which the asset is located or owned."
+            ]
+        },
+        "question": "In 2019, how many geographic regions have total revenues of more than $20,000 thousand?",
+        "explanation": "Asia Pacific has total revenues of $6,490 thousand, Europe has total revenues of $36,898 thousand, and North America has total revenues of $68,024 thousand. Europe and North America have total revenues of more than $20,000 thousand.",
+        "program": "total_revenues_in_all_regions = {'Asia Pacific': 6490, 'Europe': 36898, 'North America': 68024}\nregions_have_more_than_20000_thousand_total_revenues = [k for k, v in total_revenues_in_all_regions.items() if v > 20000]\nans = len(regions_have_more_than_20000_thousand_total_revenues)",
+        "link": "\"2019\" links to the column of the table \"2019\".\n\"total revenues of geographic regions\" links to the rows of the table \"Total Asia Pacific revenues\", \"Total Europe revenues\", \"Total North America revenues\".",
+        "analyst": "Steps:  \n1. The total revenues for each geographic region in 2019 are:  \n   - Asia Pacific: $6,490 thousand  \n   - Europe: $36,898 thousand  \n   - North America: $68,024 thousand  \n   - Consolidated total: $111,412 thousand  \n\n2. Identify the regions where total revenues exceed $20,000 thousand:  \n   - Asia Pacific: $6,490 thousand (Does not exceed $20,000 thousand)  \n   - Europe: $36,898 thousand (Exceeds $20,000 thousand)  \n   - North America: $68,024 thousand (Exceeds $20,000 thousand)  \n\n3. The number of regions with total revenues greater than $20,000 thousand is 2 (Europe and North America).  \n\nAnswer: 2",
+        "critic_extraction_analyst": "Steps:  \n1. The total revenues for each geographic region in 2019 are:  \n   - Asia Pacific: $6,490 thousand  \n   - Europe: $36,898 thousand  \n   - North America: $68,024 thousand  \n   - Consolidated total: $111,412 thousand  \n\n2. Identify the regions where total revenues exceed $20,000 thousand:  \n   - Asia Pacific: $6,490 thousand (Does not exceed $20,000 thousand)  \n   - Europe: $36,898 thousand (Exceeds $20,000 thousand)  \n   - North America: $68,024 thousand (Exceeds $20,000 thousand)  \n\n3. The number of regions with total revenues greater than $20,000 thousand is 2 (Europe and North America).  \n\nAnswer: 2",
+        "critic_extraction": "### Review of the Response:\n\n#### **1. Question Comprehension:**  \nThe response correctly interprets the question, identifying geographic regions with total revenues exceeding $20,000 thousand in 2019.\n\n#### **2. Data Extraction:**  \nThe total revenues are accurately extracted:  \n- **Asia Pacific:** $6,490 thousand  \n- **Europe:** $36,898 thousand  \n- **North America:** $68,024 thousand  \n\nThe response correctly determines that only Europe and North America exceed $20,000 thousand.\n\n### **Final Verdict:**  \nAccurate and complete. No corrections needed.",
+        "critic_calculation_analyst": "Steps:  \n1. The total revenues for each geographic region in 2019 are:  \n   - Asia Pacific: $6,490 thousand  \n   - Europe: $36,898 thousand  \n   - North America: $68,024 thousand  \n   - Consolidated total: $111,412 thousand  \n\n2. Identify the regions where total revenues exceed $20,000 thousand:  \n   - Asia Pacific: $6,490 thousand (Does not exceed $20,000 thousand)  \n   - Europe: $36,898 thousand (Exceeds $20,000 thousand)  \n   - North America: $68,024 thousand (Exceeds $20,000 thousand)  \n\n3. The number of regions with total revenues greater than $20,000 thousand is 2 (Europe and North America).  \n\nAnswer: 2",
+        "critic_calculation_critic_extraction": "### Review of the Response:\n\n#### **1. Question Comprehension:**  \nThe response correctly interprets the question, identifying geographic regions with total revenues exceeding $20,000 thousand in 2019.\n\n#### **2. Data Extraction:**  \nThe total revenues are accurately extracted:  \n- **Asia Pacific:** $6,490 thousand  \n- **Europe:** $36,898 thousand  \n- **North America:** $68,024 thousand  \n\nThe response correctly determines that only Europe and North America exceed $20,000 thousand.\n\n### **Final Verdict:**  \nAccurate and complete. No corrections needed.",
+        "critic_calculation": "#### Review of the Response\n\n1. Calculation Steps  \n   - Correctly lists total revenues for each region in 2019  \n   - Accurately compares totals against the $20,000 threshold  \n   - Correctly identifies qualifying regions  \n\n2. Calculation Accuracy  \n   - Revenue values match the table  \n   - Comparison is correct  \n   - Final count of regions is accurate  \n\n3. Unit Consistency  \n   - Units align with the table  \n   - No inconsistencies  \n\nFinal Assessment  \n- Accuracy: Correct  \n- Completeness: Sufficient  \n- Clarity: Clear  \n\nThe response is accurate and complete. No revisions needed.",
+        "refine": "Steps: Both data extraction and caiculation.\nAnswer: 2",
+        "answer": [
+            2
+        ]
+    },
+    {
+        "table": {
+            "content": [
+                [
+                    "—",
+                    "Rights and licenses",
+                    "Internally generated software",
+                    "Software under development",
+                    "Total"
+                ],
+                [
+                    "Movements",
+                    "$'000",
+                    "$'000",
+                    "$'000",
+                    "$'000"
+                ],
+                [
+                    "At 30 June 2019",
+                    "—",
+                    "—",
+                    "—",
+                    "—"
+                ],
+                [
+                    "Cost",
+                    "13",
+                    "12,961",
+                    "16,284",
+                    "29,259"
+                ],
+                [
+                    "Accumulated amortisation",
+                    "-",
+                    "-5,580",
+                    "-",
+                    "-5,580"
+                ],
+                [
+                    "Net book amount",
+                    "13",
+                    "7,381",
+                    "16,284",
+                    "23,678"
+                ],
+                [
+                    "30 June 2018",
+                    "—",
+                    "—",
+                    "—",
+                    "—"
+                ],
+                [
+                    "Opening net book amount at 1 July 2017",
+                    "43",
+                    "442",
+                    "8,053",
+                    "8,538"
+                ],
+                [
+                    "Additions – externally acquired",
+                    "13",
+                    "-",
+                    "5,253",
+                    "5,266"
+                ],
+                [
+                    "Additions – internally developed",
+                    "-",
+                    "-",
+                    "1,256",
+                    "1,256"
+                ],
+                [
+                    "Amortisation",
+                    "-43",
+                    "-1,746",
+                    "-",
+                    "-1,789"
+                ],
+                [
+                    "Transfers",
+                    "-",
+                    "7,563",
+                    "-7,563",
+                    "-"
+                ],
+                [
+                    "Transfer between classes",
+                    "-",
+                    "744",
+                    "-",
+                    "744"
+                ],
+                [
+                    "Disposals",
+                    "-",
+                    "-618",
+                    "-490",
+                    "-1,108"
+                ],
+                [
+                    "Closing net book amount",
+                    "13",
+                    "6,385",
+                    "6,509",
+                    "12,907"
+                ],
+                [
+                    "At 30 June 2018",
+                    "—",
+                    "—",
+                    "—",
+                    "—"
+                ],
+                [
+                    "Cost",
+                    "104",
+                    "9,555",
+                    "6,509",
+                    "16,168"
+                ],
+                [
+                    "Accumulated amortisation",
+                    "-91",
+                    "-3,170",
+                    "-",
+                    "-3,261"
+                ],
+                [
+                    "Net book amount",
+                    "13",
+                    "6,385",
+                    "6,509",
+                    "12,907"
+                ]
+            ]
+        },
+        "text": {
+            "paragraph": [
+                "11 Intangible assets (continued)",
+                "(a) Intangible assets",
+                "RIGHTS AND LICENCES",
+                "Certain licences that NEXTDC possesses have an indefinite useful life and are carried at cost less impairment losses and are subject to impairment review at least annually and whenever there is an indication that it may be impaired.",
+                "Other licences that NEXTDC acquires are carried at cost less accumulated amortisation and accumulated impairment losses. Amortisation is recognised on a straight-line basis over the estimated useful life. The estimated useful life and amortisation method are reviewed at the end of each annual reporting period.",
+                "INTERNALLY GENERATED SOFTWARE",
+                "Internally developed software is capitalised at cost less accumulated amortisation. Amortisation is calculated using the straight-line basis over the asset’s useful economic life which is generally two to three years. Their useful lives and potential impairment are reviewed at the end of each financial year.",
+                "SOFTWARE UNDER DEVELOPMENT",
+                "Costs incurred in developing products or systems and costs incurred in acquiring software and licenses that will contribute to future period financial benefits through revenue generation and/or cost reduction are capitalised to software and systems. Costs capitalised include external direct costs of materials and services and employee costs.",
+                "Assets in the course of construction include only those costs directly attributable to the development phase and are only recognised following completion of technical feasibility and where the Group has an intention and ability to use the asset."
+            ]
+        },
+        "question": "Which year has greater total accumulated amortisation?",
+        "explanation": "The total accumulated amortisation in 2019 is $5,580 thousand and the total accumulated amortisation in 2018 is $3,261 thousand. 2019 has greater total accumulated amortisation.",
+        "program": "total_accumulated_amortisation = {'2019': 5580, '2018': 3261}\nans = sorted(total_accumulated_amortisation.items(), key=lambda tup: tup[1], reverse=True)[0][0]",
+        "link": "\"total accumulated amortisation\" links to the rows of the table \"Accumulated amortisation\".\n\"which year\" links to the rows of the table \"At 30 June 2019\" and \"At 30 June 2018\".",
+        "analyst": "Steps:  \n1. The accumulated amortisation values for both years are given in the table.  \n2. For 30 June 2019, the total accumulated amortisation is `-5,580 ('000)`.  \n3. For 30 June 2018, the total accumulated amortisation is `-3,261 ('000)`.  \n4. Comparing both values, `-5,580 ('000)` is a greater amortisation amount than `-3,261 ('000)`.  \n\nAnswer: 2019",
+        "critic_extraction_analyst": "Steps:  \n1. The accumulated amortisation values for both years are given in the table.  \n2. For 30 June 2019, the total accumulated amortisation is `-3,261 ('000)`.  \n3. For 30 June 2018, the total accumulated amortisation is `-5,580 ('000)`.  \n4. Comparing both values, `-5,580 ('000)` is a greater amortisation amount than `-3,261 ('000)`.  \n\nAnswer: 2018",
+        "critic_extraction": "### Review of the Response\n\n#### Question Comprehension\nThe response understands the question correctly and identifies the relevant values for comparison.\n\n#### Data Extraction\n- The response states accumulated amortisation as:\n  - 2019:  -3,261 ('000)\n  - 2018:  -5,580 ('000)\n\n- The table shows:\n  - 2019:  -5,580 ('000)\n  - 2018:  -3,261 ('000)\n\nThe response swaps the values, leading to the wrong conclusion.\n\n#### Final Verdict\nIncorrect. The correct answer is 2019.",
+        "critic_calculation_analyst": "Steps: \n1. The accumulated amortisation values for both years are given in the table.  \n2. For 30 June 2019, the total accumulated amortisation is `-5,580 ('000)`.  \n3. For 30 June 2018, the total accumulated amortisation is `-3,261 ('000)`.  \n4. Comparing both values, `-5,580 ('000)` is a greater amortisation amount than `-3,261 ('000)`.  \n\nAnswer: 2019",
+        "critic_calculation_critic_extraction": "### Review of Response\n\n#### Question Comprehension:\nThe response correctly understands the question. It identifies that the goal is to compare the accumulated amortisation values for two different years (30 June 2018 and 30 June 2019) and determine which year has the greater total accumulated amortisation.\n\n#### Data Extraction:\nThe response accurately extracts the accumulated amortisation values from the table:\n- **30 June 2019:** `-5,580 ('000)`\n- **30 June 2018:** `-3,261 ('000)`\n\nBoth values are correctly pulled from the \"Accumulated amortisation\" rows in the provided table.\n\n#### Verdict:\nThe response is **accurate and complete** in terms of question comprehension and data extraction.",
+        "critic_calculation": "### Review of Response\n\n#### **Accuracy and Completeness Check**\n- **Calculation Steps**: Correctly identifies and compares amortisation values.\n- **Calculation Accuracy**: Extracted values are correct:\n  - 30 June 2019: `-5,580 ('000)`\n  - 30 June 2018: `-3,261 ('000)`\n  - Comparison is accurate.\n- **Unit Consistency**: Maintained correctly.\n\n#### **Final Verdict**\nResponse is accurate and complete. No changes needed.",
+        "refine": "Steps: Both data extraction and caiculation.\nAnswer: 2019",
+        "answer": [
+            "2019"
+        ]
+    },
+    {
+        "table": {
+            "content": [
+                [
+                    "—",
+                    "December 31, 2019",
+                    "December 31, 2018"
+                ],
+                [
+                    "United States federal statutory rate",
+                    "21.00%",
+                    "21.00%"
+                ],
+                [
+                    "State taxes, net of federal benefit",
+                    "-0.01%",
+                    "1.99%"
+                ],
+                [
+                    "Valuation allowance",
+                    "-24.33%",
+                    "-21.96%"
+                ],
+                [
+                    "Cumulative effect of accounting change",
+                    "2.07%",
+                    "—"
+                ],
+                [
+                    "R&D Credit",
+                    "1.53%",
+                    "1.34%"
+                ],
+                [
+                    "Other",
+                    "-0.27%",
+                    "-0.38%"
+                ],
+                [
+                    "Effective income tax rate",
+                    "-0.01%",
+                    "1.99%"
+                ]
+            ]
+        },
+        "text": {
+            "paragraph": [
+                "Effective Income Tax Rate",
+                "A reconciliation of the United States federal statutory income tax rate to our effective income tax rate is as follows:",
+                "In 2019 and 2018 we had pre-tax losses of $19,573 and $25,403, respectively, which are available for carry forward to offset future taxable income. We made determinations to provide full valuation allowances for our net deferred tax assets at the end of 2019 and 2018, including NOL carryforwards generated during the years, based on our evaluation of positive and negative evidence, including our history of operating losses and the uncertainty of generating future taxable income that would enable us to realize our deferred tax."
+            ]
+        },
+        "question": "What was the 2019 percentage change in pre-tax losses?",
+        "explanation": "The pre-tax losses in 2019 is $19,573 and the pre-tax losses in 2018 is $25,403. The net change in pre-tax losses is -$5,830. The percentage change is -22.95%.",
+        "program": "pre_tax_losses_2018 = 25403\npre_tax_losses_2019 = 19573\nnet_change = pre_tax_losses_2019 - pre_tax_losses_2018\nans = net_change / pre_tax_losses_2018 * 100",
+        "link": "\"2019 pre-tax losses\" and \"2018 pre-tax losses\" link to the part of the text \"In 2019 and 2018 we had pre-tax losses of $19,573 and $25,403, respectively\".",
+        "analyst": "Steps:  \n1. The pre-tax loss for 2019 is $19,573 million.  \n2. The pre-tax loss for 2018 is $25,403 million.  \n3. The percentage change in pre-tax losses is calculated as:  \n\n   \\[\n   \text{Percentage Change} = \\left( \frac{\text{Pre-tax loss in 2019} - \text{Pre-tax loss in 2018}}{\text{Pre-tax loss in 2018}} \right) \times 100\n   \\]\n\n   Substituting the values:  \n\n   \\[\n   \text{Percentage Change} = \\left( \frac{19,573 - 25,403}{25,403} \right) \times 100\n   \\]\n\n   \\[\n   = \\left( \frac{-5,830}{25,403} \right) \times 100\n   \\]\n\n   \\[\n   = -22.95\\%\n   \\]\n\nAnswer: -22.95",
+        "critic_extraction_analyst": "Steps:  \n1. The pre-tax loss for 2019 is $19,573 million.  \n2. The pre-tax loss for 2018 is $25,403 million.  \n3. The percentage change in pre-tax losses is calculated as:  \n\n   \\[\n   \text{Percentage Change} = \\left( \frac{\text{Pre-tax loss in 2019} - \text{Pre-tax loss in 2018}}{\text{Pre-tax loss in 2018}} \right) \times 100\n   \\]\n\n   Substituting the values:  \n\n   \\[\n   \text{Percentage Change} = \\left( \frac{19,573 - 25,403}{25,403} \right) \times 100\n   \\]\n\n   \\[\n   = \\left( \frac{-5,830}{25,403} \right) \times 100\n   \\]\n\n   \\[\n   = -22.95\\%\n   \\]\n\nAnswer: -22.95",
+        "critic_extraction": "## Review of Response\n\n### Question Comprehension\n- The response correctly understands the original question, which asks for the percentage change in pre-tax losses from 2018 to 2019.\n- It correctly identifies the relevant figures from the provided text.\n\n### Data Extraction\n- The pre-tax losses for 2019 ($19,573 million) and 2018 ($25,403 million) are accurately extracted from the text.\n- No relevant numerical data appears to be missing or misinterpreted.\n\n### Verdict\n- **Accurate and complete in terms of question comprehension and data extraction.**",
+        "critic_calculation_analyst": "Steps: \n1. The pre-tax loss for 2019 is $19,573 million.  \n2. The pre-tax loss for 2018 is $25,403 million.  \n3. The percentage change in pre-tax losses is calculated as:  \n\n   \\[\n   \text{Percentage Change} = \\left( \frac{\text{Pre-tax loss in 2019} - \text{Pre-tax loss in 2018}}{\text{Pre-tax loss in 2018}} \right) \times 100\n   \\]\n\n   Substituting the values:  \n\n   \\[\n   \text{Percentage Change} = \\left( \frac{19,573 - 25,403}{25,403} \right) \times 100\n   \\]\n\n   \\[\n   = \\left( \frac{-5,830}{25,403} \right) \times 100\n   \\]\n\n   \\[\n   = -23.8\\%\n   \\]\n\nAnswer: -23.8",
+        "critic_calculation_critic_extraction": "### Review of Response\n\n#### Question Comprehension:\nThe response correctly understands the question. The question asks for the percentage change in pre-tax losses from 2018 to 2019. The response identifies the relevant pre-tax loss values for both years and proceeds to calculate the percentage change accordingly.\n\n#### Data Extraction:\nThe response accurately extracts the pre-tax loss values from the provided text:\n- 2019 pre-tax loss: 19,573\n- 2018 pre-tax loss: 25,403\n\nThese values match the information given in the text, ensuring accuracy in data extraction.",
+        "critic_calculation": "Review of Response:\n\n1. **Calculation Steps**  \n   - The steps provided in the response correctly outline the process for calculating the percentage change in pre-tax losses.\n   - The formula used for percentage change is accurate.\n\n2. **Calculation Accuracy**  \n   - Pre-tax loss for 2019: 19,573  \n   - Pre-tax loss for 2018: 25,403  \n   - Difference: 19,573 - 25,403 = -5,830  \n   - Percentage change: (-5,830 / 25,403) × 100 = -22.96%  \n   - The response states -23.8%, which is incorrect. The correct value is **-22.95**.\n\n3. **Unit Consistency**  \n   - The percentage change is correctly expressed in percentage terms.\n\n### Suggested Correction:\nThe correct percentage change in pre-tax losses is **-22.95**, not -23.8%.",
+        "refine": "Steps: The data extraction is correct, but the calculation ois incorrect. The correct percentage change in pre-tax losses is **-22.95**, not -23.8%.\nAnswer: -22.95",
+        "answer": [
+            -22.95
+        ]
+    }
+]

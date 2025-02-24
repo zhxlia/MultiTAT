@@ -1,0 +1,31 @@
+{
+    "Direct": {
+        "prompt": "Soma maandishi na jedwali lifuatalo, kisha ujibu swali.\nHapa kuna mifano kadhaa:\n\n---\n\n{examples}\n\n---\n\nKulingana na mifano iliyo hapo juu, jibu swali lifuatalo.\nWakilisha jibu lako kwa: \"Jibu: <jibu lako>\"\n\n{example_user}",
+        "example": "{text}\n{table}\nSwali: {question}\nJibu: {answer}",
+        "user": "{text}\n{table}\nSwali: {question}"
+    },
+    "CoT": {
+        "prompt": "Soma maandishi na jedwali lifuatalo, kisha ujibu swali\nHapa kuna mifano kadhaa:\n\n---\n\n{examples}\n\n---\n\nKulingana na mifano iliyo hapo juu, jibu swali lifuatalo.\nWakilisha jibu lako kwa: \"Ufafanuzi: <ufafanuzi wako>\nJibu: <jibu lako>\"\n\n{example_user}",
+        "example": "{text}\n{table}\nSwali: {question}\nUfafanuzi: {explanation}\nJibu: {answer}",
+        "user": "{text}\n{table}\nSwali: {question}"
+    },
+    "PoT": {
+        "prompt": "Soma maandishi na jedwali lifuatalo, kisha uandike msimbo wa Python kujibu swali\nHapa kuna mifano kadhaa:\n\n---\n\n{examples}\n\n---\n\nKulingana na mifano iliyo hapo juu, jibu swali lifuatalo kwa msimbo wa Python.\nWakilisha jibu lako kwa: \"Jibu: <jibu lako>\"\n\n{example_user}",
+        "example": "{text}\n{table}\nSwali: {question}\nJibu:\n```python\n{answer}\n```",
+        "user": "{text}\n{table}\nSwali: {question}"
+    },
+    "Decompose": {
+        "prompt": [
+            "Tafadhali fikiria kwa Kiswahili na tambua taarifa husika kutoka kwa maandishi na jedwali kulingana na swali.\nHapa kuna mifano kadhaa:\n\n---\n\n{examples}\n\n---\n\nKulingana na mifano hapo juu, chambua swali.\nTafadhali kumbuka kwamba unahitaji **tu** kutambua taarifa husika, bila kufanya mahesabu ya ziada.\n\n{example_user}",
+            "Kulingana na taarifa husika, unapaswa pia kufikiri kwa Kiswahili na kuandika msimbo wa python kujibu swali.\nHapa kuna mifano kadhaa:\n\n---\n\n{examples}\n\n---\n\nKulingana na mifano hapo juu, jibu swali kwa kutumia msimbo wa Python.\nTafadhali kumbuka:\n1. Mbali na namba, jaribu kutumia Kiswahili kama jibu.\n2. Weka jibu lako **fupi** na kwa taarifa chache.\n3. Kumbuka ishara ya upungufu inayowezekana.\n4. Unapaswa KWA KUTIA mbadala kuunda msimbo wa Python badala ya kurudisha jibu moja kwa moja.\nWakilisha jibu lako na: \"ans = <your answer>\"\n\n{example_user}"
+        ],
+        "example": [
+            "{text}\n{table}\nSwali: {question}\n{answer}\n",
+            "{text}\n{table}\nSwali: {question}\n```python\n{answer}\n```"
+        ],
+        "user": [
+            "{text}\n{table}\nSwali: {question}",
+            "{text}\n{table}\nSwali: {question}"
+        ]
+    }
+}

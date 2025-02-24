@@ -1,0 +1,222 @@
+[
+    {
+        "table": {
+            "content": [
+                [
+                    "—",
+                    "2019",
+                    "2018"
+                ],
+                [
+                    "—",
+                    "Anzahl",
+                    "Anzahl"
+                ],
+                [
+                    "Kundenbetrieb",
+                    "370",
+                    "380"
+                ],
+                [
+                    "Produkt und Technologie",
+                    "317",
+                    "312"
+                ],
+                [
+                    "Unternehmensführung",
+                    "115",
+                    "130"
+                ],
+                [
+                    "Gesamt",
+                    "802",
+                    "822"
+                ]
+            ]
+        },
+        "text": {
+            "paragraph": [
+                "7. Mitarbeiterzahlen und -kosten",
+                "Die durchschnittliche monatliche Anzahl von Mitarbeitern (einschließlich der Geschäftsführung, jedoch ohne Drittanbieter) im Unternehmen war wie folgt:"
+            ]
+        },
+        "question": "Welche Mitarbeiterkategorien sind in der Tabelle aufgeführt?",
+        "explanation": "Die Antwort kann direkt in der obigen Tabelle gefunden werden.",
+        "program": "ans = ['Kundenbetrieb', 'Produkt und Technologie', 'Unternehmensführung']",
+        "link": "\"Mitarbeiterkategorien\" links to the rows of the table \"Kundenbetrieb\", \"Produkt und Technologie\", \"Unternehmensführung\" and the columns of the table \"2019\", \"2018\".",
+        "answer": [
+            "Kundenbetrieb",
+            "Produkt und Technologie",
+            "Unternehmensführung"
+        ]
+    },
+    {
+        "table": {
+            "content": [
+                [
+                    "Jahr zum 31. Dezember,",
+                    "",
+                    ""
+                ],
+                [
+                    "",
+                    "2019",
+                    "2018"
+                ],
+                [
+                    "Asien-Pazifik",
+                    "",
+                    ""
+                ],
+                [
+                    "Reisen",
+                    "$6.274",
+                    "$7.351"
+                ],
+                [
+                    "Lokal",
+                    "216",
+                    "508"
+                ],
+                [
+                    "Gesamteinnahmen Asien-Pazifik",
+                    "6.490",
+                    "7.859"
+                ],
+                [
+                    "Europa",
+                    "",
+                    ""
+                ],
+                [
+                    "Reisen",
+                    "32.081",
+                    "30.856"
+                ],
+                [
+                    "Lokal",
+                    "4.817",
+                    "5.293"
+                ],
+                [
+                    "Gesamteinnahmen Europa",
+                    "36.898",
+                    "36.149"
+                ],
+                [
+                    "Nordamerika",
+                    "",
+                    ""
+                ],
+                [
+                    "Reisen",
+                    "57.863",
+                    "56.145"
+                ],
+                [
+                    "Lokal",
+                    "10.161",
+                    "11.169"
+                ],
+                [
+                    "Gesamteinnahmen Nordamerika",
+                    "68.024",
+                    "67.314"
+                ],
+                [
+                    "Konsolidiert",
+                    "",
+                    ""
+                ],
+                [
+                    "Reisen",
+                    "96.218",
+                    "94.352"
+                ],
+                [
+                    "Lokal",
+                    "15.194",
+                    "16.970"
+                ],
+                [
+                    "Gesamteinnahmen",
+                    "$111.412",
+                    "111.322"
+                ]
+            ]
+        },
+        "text": {
+            "paragraph": [
+                "Die folgende Tabelle zeigt die Aufschlüsselung der Einnahmen nach Kategorie und Segment. Reiseeinnahmen beinhalten Reiseveröffentlichungen (Top 20, Website, Newsflash, Travelzoo Network), Getaway-Gutscheine und Hotelplattformen. Lokale Einnahmen beinhalten Gutscheine für lokale Angebote und Unterhaltungsangebote (Gutscheine und direkte Buchungen) (in Tausend).",
+                "Einnahmen nach Geografie basieren auf der Rechnungsadresse des Werbetreibenden. Langfristige Vermögenswerte, die den USA und internationalen Regionen zugeschrieben werden, basieren auf dem Land, in dem das Vermögen sich befindet oder im Besitz ist."
+            ]
+        },
+        "question": "Wie viele geografische Regionen hatten 2019 Gesamteinnahmen von mehr als 20.000 Tausend?",
+        "explanation": "Der asiatisch-pazifische Raum hat Gesamteinnahmen von 6.490 Tausend, Europa hat Gesamteinnahmen von 36.898 Tausend und Nordamerika hat Gesamteinnahmen von 68.024 Tausend. Europa und Nordamerika haben Gesamteinnahmen von mehr als 20.000 Tausend.",
+        "program": "total_revenues_in_all_regions = {'Asien-Pazifik': 6490, 'Europa': 36898, 'Nordamerika': 68024}\nregions_have_more_than_20000_thousand_total_revenues = [k for k, v in total_revenues_in_all_regions.items() if v > 20000]\nans = len(regions_have_more_than_20000_thousand_total_revenues)",
+        "link": "\"2019\" links to the column of the table \"2019\".\n\"Gesamteinnahmen der geografischen Regionen\" links to the rows of the table \"Gesamteinnahmen Asien-Pazifik\", \"Gesamteinnahmen Europa\", \"Gesamteinnahmen Nordamerika\".",
+        "answer": [
+            2
+        ]
+    },
+    {
+        "table": {
+            "content": [
+                [
+                    "—",
+                    "31. Dezember 2019",
+                    "31. Dezember 2018"
+                ],
+                [
+                    "US-amerikanischer Bundessteuersatz",
+                    "21,00%",
+                    "21,00%"
+                ],
+                [
+                    "Steuern der Bundesstaaten, nach Abzug des Bundesnutzens",
+                    "-0,01%",
+                    "1,99%"
+                ],
+                [
+                    "Wertberichtigung",
+                    "-24,33%",
+                    "-21,96%"
+                ],
+                [
+                    "Kumulative Wirkung einer Änderung der Rechnungslegung",
+                    "2,07%",
+                    "—"
+                ],
+                [
+                    "F&E-Gutschrift",
+                    "1,53%",
+                    "1,34%"
+                ],
+                [
+                    "Sonstige",
+                    "-0,27%",
+                    "-0,38%"
+                ],
+                [
+                    "Effektiver Einkommenssteuersatz",
+                    "-0,01%",
+                    "1,99%"
+                ]
+            ]
+        },
+        "text": {
+            "paragraph": [
+                "Effektiver Einkommenssteuersatz",
+                "Eine Überleitung des US-amerikanischen Bundessteuersatzes zu unserem effektiven Einkommenssteuersatz ist wie folgt:",
+                "In den Jahren 2019 und 2018 hatten wir Vorsteuerverluste von 19.573 und 25.403, die vorgetragen werden können, um zukünftiges zu versteuerndes Einkommen zu verrechnen. Wir haben uns entschlossen, für unsere latenten Steueransprüche am Ende der Jahre 2019 und 2018, einschließlich der in diesen Jahren entstandenen NOL-Vorträge, vollständige Wertberichtigungen vorzunehmen, basierend auf unserer Bewertung von positiven und negativen Beweisen, einschließlich unserer Verlusthistorie und der Unsicherheit der Generierung von zukünftigem zu versteuerndem Einkommen, das es uns ermöglichen würde, unsere latenten Steueransprüche zu realisieren."
+            ]
+        },
+        "question": "Wie hoch war die prozentuale Veränderung der Vorsteuerverluste im Jahr 2019?",
+        "explanation": "Die Vorsteuerverluste im Jahr 2019 betragen 19.573 und die Vorsteuerverluste im Jahr 2018 betragen 25.403. Die Nettoveränderung der Vorsteuerverluste beträgt -5.830. Die prozentuale Veränderung beträgt -22,95%.",
+        "program": "pre_tax_losses_2018 = 25403\npre_tax_losses_2019 = 19573\nnet_change = pre_tax_losses_2019 - pre_tax_losses_2018\nans = net_change / pre_tax_losses_2018 * 100",
+        "link": "\"2019 Vorsteuerverluste\" and \"2018 Vorsteuerverluste\" link to the part of the text \"In 2019 and 2018 we had pre-tax losses of $19,573 and $25,403, respectively\".",
+        "answer": [
+            "-22,95"
+        ]
+    }
+]

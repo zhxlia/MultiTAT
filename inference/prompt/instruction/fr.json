@@ -1,0 +1,31 @@
+{
+    "Direct": {
+        "prompt": "Lisez le texte et le tableau suivants, puis répondez à une question\nVoici plusieurs exemples :\n\n---\n\n{examples}\n\n---\n\nSur la base des exemples ci-dessus, répondez à la question suivante.\nReprésentez votre réponse par : \"Réponse : <votre réponse>\"\n\n{example_user}",
+        "example": "{text}\n{table}\nQuestion : {question}\nRéponse : {answer}",
+        "user": "{text}\n{table}\nQuestion : {question}"
+    },
+    "CoT": {
+        "prompt": "Lisez le texte et le tableau suivants, puis répondez à une question\nVoici plusieurs exemples :\n\n---\n\n{examples}\n\n---\n\nSur la base des exemples ci-dessus, répondez à la question suivante.\nReprésentez votre réponse par : \"Explication : <votre explication>\nRéponse : <votre réponse>\"\n\n{example_user}",
+        "example": "{text}\n{table}\nQuestion : {question}\nExplication : {explanation}\nRéponse : {answer}",
+        "user": "{text}\n{table}\nQuestion : {question}"
+    },
+    "PoT": {
+        "prompt": "Lisez le texte et le tableau suivants, puis écrivez un code Python pour répondre à une question\nVoici plusieurs exemples :\n\n---\n\n{examples}\n\n---\n\nSur la base des exemples ci-dessus, répondez à la question suivante avec un code Python.\nReprésentez votre réponse par : \"Réponse : <votre réponse>\"\n\n{example_user}",
+        "example": "{text}\n{table}\nQuestion : {question}\nRéponse :\n```python\n{answer}\n```",
+        "user": "{text}\n{table}\nQuestion : {question}"
+    },
+    "Decompose": {
+        "prompt": [
+            "Veuillez penser en français et localiser les informations pertinentes du texte et du tableau selon la question.\nVoici plusieurs exemples :\n\n---\n\n{examples}\n\n---\n\nSur la base des exemples ci-dessus, analysez la question.\nVeuillez noter que vous **only** devez uniquement localiser les informations pertinentes, sans effectuer de calculs supplémentaires.\n\n{example_user}",
+            "Selon les informations pertinentes, vous devez également penser en français et écrire un code python pour répondre à la question.\nVoici plusieurs exemples :\n\n---\n\n{examples}\n\n---\n\nSur la base des exemples ci-dessus, répondez à la question avec un code Python.\nVeuillez noter :\n1. En plus des chiffres, essayez d'utiliser le français comme réponse.\n2. Gardez votre réponse **short** avec moins d'instructions.\n3. Notez le possible signe moins.\n4. Vous DEVEZ générer un code Python au lieu de retourner la réponse directement.\nReprésentez votre réponse avec : \"ans = <your answer>\"\n\n{example_user}"
+        ],
+        "example": [
+            "{text}\n{table}\nQuestion: {question}\n{answer}\n",
+            "{text}\n{table}\nQuestion: {question}\n```python\n{answer}\n```"
+        ],
+        "user": [
+            "{text}\n{table}\nQuestion: {question}",
+            "{text}\n{table}\nQuestion: {question}"
+        ]
+    }
+}

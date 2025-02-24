@@ -1,0 +1,222 @@
+[
+    {
+        "table": {
+            "content": [
+                [
+                    "—",
+                    "2019",
+                    "2018"
+                ],
+                [
+                    "—",
+                    "Number",
+                    "Number"
+                ],
+                [
+                    "Huduma kwa wateja",
+                    "370",
+                    "380"
+                ],
+                [
+                    "Bidhaa na teknolojia",
+                    "317",
+                    "312"
+                ],
+                [
+                    "Kampuni",
+                    "115",
+                    "130"
+                ],
+                [
+                    "Jumla",
+                    "802",
+                    "822"
+                ]
+            ]
+        },
+        "text": {
+            "paragraph": [
+                "7. Idadi na gharama za wafanyakazi",
+                "Idadi ya wastani ya wafanyakazi wa kila mwezi (ikiwa ni pamoja na Wakurugenzi Watendaji lakini ukiondoa makandarasi wa wahusika wa tatu) waliotumika na Kikundi ilikuwa kama ifuatavyo:"
+            ]
+        },
+        "question": "Ni makundi gani ya wafanyakazi yameorodheshwa kwenye jedwali?",
+        "explanation": "Jibu linaweza kupatikana moja kwa moja kwenye jedwali hapo juu.",
+        "program": "ans = ['Huduma kwa wateja', 'Bidhaa na teknolojia', 'Kampuni']",
+        "link": "\"Makundi ya wafanyakazi\" links to the rows of the table \"Huduma kwa wateja\", \"Bidhaa na teknolojia\", \"Kampuni\" and the columns of the table \"2019\", \"2018\".",
+        "answer": [
+            "Huduma kwa wateja",
+            "Bidhaa na teknolojia",
+            "Kampuni"
+        ]
+    },
+    {
+        "table": {
+            "content": [
+                [
+                    "Mwaka Uliomalizika Desemba 31,",
+                    "",
+                    ""
+                ],
+                [
+                    "",
+                    "2019",
+                    "2018"
+                ],
+                [
+                    "Asia Pasifiki",
+                    "",
+                    ""
+                ],
+                [
+                    "Safari",
+                    "$6,274",
+                    "$7,351"
+                ],
+                [
+                    "Mitaa",
+                    "216",
+                    "508"
+                ],
+                [
+                    "Jumla ya mapato ya Asia Pasifiki",
+                    "6,490",
+                    "7,859"
+                ],
+                [
+                    "Ulaya",
+                    "",
+                    ""
+                ],
+                [
+                    "Safari",
+                    "32,081",
+                    "30,856"
+                ],
+                [
+                    "Mitaa",
+                    "4,817",
+                    "5,293"
+                ],
+                [
+                    "Jumla ya mapato ya Ulaya",
+                    "36,898",
+                    "36,149"
+                ],
+                [
+                    "Amerika ya Kaskazini",
+                    "",
+                    ""
+                ],
+                [
+                    "Safari",
+                    "57,863",
+                    "56,145"
+                ],
+                [
+                    "Mitaa",
+                    "10,161",
+                    "11,169"
+                ],
+                [
+                    "Jumla ya mapato ya Amerika ya Kaskazini",
+                    "68,024",
+                    "67,314"
+                ],
+                [
+                    "Jumla ya Makusanyo",
+                    "",
+                    ""
+                ],
+                [
+                    "Safari",
+                    "96,218",
+                    "94,352"
+                ],
+                [
+                    "Mitaa",
+                    "15,194",
+                    "16,970"
+                ],
+                [
+                    "Jumla ya mapato",
+                    "$111,412",
+                    "111,322"
+                ]
+            ]
+        },
+        "text": {
+            "paragraph": [
+                "Jedwali lifuatalo linaweka mapato kulingana na kitengo na sehemu. Mapato ya safari yanajumuisha machapisho ya safari (Top 20, Website, Newsflash, Travelzoo Network), vocha za Getaway na jukwaa la hoteli. Mapato ya Mitaa yanajumuisha vocha za Local Deals na matoleo ya burudani (vocha na bookings za moja kwa moja) (kwa maelfu).",
+                "Mapato kulingana na jiografia yanategemea anwani ya malipo ya mtangazaji. Mali zinazohusiana na U.S. na jiografia za kimataifa zinategemea nchi ambayo mali inapatikana au kumilikiwa."
+            ]
+        },
+        "question": "Mnamo mwaka 2019, ni maeneo mangapi ya kijiografia yana mapato ya zaidi ya $20,000 maelfu?",
+        "explanation": "Asia Pasifiki ina mapato ya $6,490 maelfu, Ulaya ina mapato ya $36,898 maelfu, na Amerika ya Kaskazini ina mapato ya $68,024 maelfu. Ulaya na Amerika ya Kaskazini zina mapato ya zaidi ya $20,000 maelfu.",
+        "program": "total_revenues_in_all_regions = {'Asia Pasifiki': 6490, 'Ulaya': 36898, 'Amerika ya Kaskazini': 68024}\nregions_have_more_than_20000_thousand_total_revenues = [k for k, v in total_revenues_in_all_regions.items() if v > 20000]\nans = len(regions_have_more_than_20000_thousand_total_revenues)",
+        "link": "\"2019\" links to the column of the table \"2019\".\n\"Jumla ya mapato ya kijiografia\" links to the rows of the table \"Jumla ya mapato ya Asia Pasifiki\", \"Jumla ya mapato ya Ulaya\", \"Jumla ya mapato ya Amerika ya Kaskazini\".",
+        "answer": [
+            2
+        ]
+    },
+    {
+        "table": {
+            "content": [
+                [
+                    "—",
+                    "Desemba 31, 2019",
+                    "Desemba 31, 2018"
+                ],
+                [
+                    "Kiwango cha kodi ya kisheria ya Marekani",
+                    "21.00%",
+                    "21.00%"
+                ],
+                [
+                    "Kodi za majimbo, baada ya manufaa ya shirikisho",
+                    "-0.01%",
+                    "1.99%"
+                ],
+                [
+                    "Kiwango cha makadirio ya thamani",
+                    "-24.33%",
+                    "-21.96%"
+                ],
+                [
+                    "Athari ya mabadiliko ya uhasibu",
+                    "2.07%",
+                    "—"
+                ],
+                [
+                    "Mikopo ya Utafiti na Maendeleo (R&D)",
+                    "1.53%",
+                    "1.34%"
+                ],
+                [
+                    "Nyingine",
+                    "-0.27%",
+                    "-0.38%"
+                ],
+                [
+                    "Kiwango cha kodi ya mapato halisi",
+                    "-0.01%",
+                    "1.99%"
+                ]
+            ]
+        },
+        "text": {
+            "paragraph": [
+                "Kiwango Halisi cha Kodi ya Mapato",
+                "Rekebisho la kiwango cha kodi ya mapato ya shirikisho la Marekani kulingana na kiwango chetu halisi cha kodi ya mapato ni kama ifuatavyo:",
+                "Mnamo mwaka 2019 na 2018 tulikuwa na hasara za kabla ya kodi za $19,573 na $25,403, mtawalia, ambazo zinapatikana kwa kuendelea ili kufidia mapato ya baadaye yanayotozwa kodi. Tulifanya maamuzi ya kutoa makadirio kamili ya thamani kwa mali zetu za kodi zilizoahirishwa mwishoni mwa 2019 na 2018, ikiwa ni pamoja na makadirio ya NOL yaliyozalishwa wakati wa miaka hiyo, kwa kutegemea tathmini yetu ya ushahidi chanya na hasi, ikiwa ni pamoja na historia yetu ya hasara za uendeshaji na kutokuwa na uhakika wa kuzalisha mapato ya baadaye yanayoweza kutozwa kodi ambayo yangeweza kutuwezesha kupata mali zetu za kodi zilizoahirishwa."
+            ]
+        },
+        "question": "Je, asilimia ya mabadiliko ya hasara za kabla ya kodi mwaka 2019 ilikuwa ngapi?",
+        "explanation": "Hasara za kabla ya kodi mwaka 2019 ni $19,573 na hasara za kabla ya kodi mwaka 2018 ni $25,403. Mabadiliko ya jumla katika hasara za kabla ya kodi ni -$5,830. Mabadiliko ya asilimia ni -22.95%.",
+        "program": "pre_tax_losses_2018 = 25403\npre_tax_losses_2019 = 19573\nnet_change = pre_tax_losses_2019 - pre_tax_losses_2018\nans = net_change / pre_tax_losses_2018 * 100",
+        "link": "\"hasara za kabla ya kodi za 2019\" and \"hasara za kabla ya kodi za 2018\" link to the part of the text \"Mnamo mwaka 2019 na 2018 tulikuwa na hasara za kabla ya kodi za $19,573 na $25,403, mtawalia\".",
+        "answer": [
+            -22.95
+        ]
+    }
+]

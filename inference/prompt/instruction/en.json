@@ -1,0 +1,31 @@
+{
+    "Direct": {
+        "prompt": "Read the following text and table, and then answer a question.\nHere are several examples:\n\n---\n\n{examples}\n\n---\n\nBased on the examples above, answer the following question.\nRepresent your answer with: \"Answer: <your answer>\"\n\n{example_user}",
+        "example": "{text}\n{table}\nQuestion: {question}\nAnswer: {answer}",
+        "user": "{text}\n{table}\nQuestion: {question}"
+    },
+    "CoT": {
+        "prompt": "Read the following text and table, and then answer a question.\nHere are several examples:\n\n---\n\n{examples}\n\n---\n\nBased on the examples above, answer the following question.\nRepresent your answer with: \"Explanation: <your explanation>\nAnswer: <your answer>\"\n\n{example_user}",
+        "example": "{text}\n{table}\nQuestion: {question}\nExplanation: {explanation}\nAnswer: {answer}",
+        "user": "{text}\n{table}\nQuestion: {question}"
+    },
+    "PoT": {
+        "prompt": "Read the following text and table, and then write a python code to answer a question\nHere are several examples:\n\n---\n\n{examples}\n\n---\n\nBased on the examples above, answer the following question with a Python code.\nRepresent your answer with: \"Answer: <your answer>\"\n\n{example_user}",
+        "example": "{text}\n{table}\nQuestion: {question}\nAnswer:\n```python\n{answer}\n```",
+        "user": "{text}\n{table}\nQuestion: {question}"
+    },
+    "Decompose": {
+        "prompt": [
+            "Please think in English and locate the relevant information from the text and table according to the question.\nHere are several examples:\n\n---\n\n{examples}\n\n---\n\nBased on the examples above, analyze the question.\nPlease note that you **only** need to locate the relevant information, without performing additional calculations.\n\n{example_user}",
+            "According to the relevant information, you should also think in English and write a python code to answer the question.\nHere are several examples:\n\n---\n\n{examples}\n\n---\n\nBased on the examples above, answer the question with a Python code.\nPlease note:\n1. In addition to numbers, try to use {language} as the answer.\n2. Keep your answer **short** with fewer statements.\n3. Note the possible minus sign.\n4. You MUST generate a Python code instead of returning the answer directly.\nRepresent your answer with: \"ans = <your answer>\"\n\n{example_user}"
+        ],
+        "example": [
+            "{text}\n{table}\nQuestion: {question}\n{answer}\n",
+            "{text}\n{table}\nQuestion: {question}\n```python\n{answer}\n```"
+        ],
+        "user": [
+            "{text}\n{table}\nQuestion: {question}",
+            "{text}\n{table}\nQuestion: {question}"
+        ]
+    }
+}

@@ -1,0 +1,222 @@
+[
+    {
+        "table": {
+            "content": [
+                [
+                    "—",
+                    "2019",
+                    "2018"
+                ],
+                [
+                    "—",
+                    "Número",
+                    "Número"
+                ],
+                [
+                    "Operaciones con clientes",
+                    "370",
+                    "380"
+                ],
+                [
+                    "Producto y tecnología",
+                    "317",
+                    "312"
+                ],
+                [
+                    "Corporativo",
+                    "115",
+                    "130"
+                ],
+                [
+                    "Total",
+                    "802",
+                    "822"
+                ]
+            ]
+        },
+        "text": {
+            "paragraph": [
+                "7. Número y costos de empleados",
+                "El promedio mensual de empleados (incluyendo Directores Ejecutivos pero excluyendo contratistas externos) empleados por el Grupo fue el siguiente:"
+            ]
+        },
+        "question": "¿Cuáles son las categorías de empleados enumeradas en la tabla?",
+        "explanation": "La respuesta se puede encontrar directamente en la tabla anterior.",
+        "program": "ans = ['Operaciones con clientes', 'Producto y tecnología', 'Corporativo']",
+        "link": "\"Categorías de empleados\" links to the rows of the table \"Operaciones con clientes\", \"Producto y tecnología\", \"Corporativo\" and the columns of the table \"2019\", \"2018\".",
+        "answer": [
+            "Operaciones con clientes",
+            "Producto y tecnología",
+            "Corporativo"
+        ]
+    },
+    {
+        "table": {
+            "content": [
+                [
+                    "Año terminado el 31 de diciembre,",
+                    "",
+                    ""
+                ],
+                [
+                    "",
+                    "2019",
+                    "2018"
+                ],
+                [
+                    "Asia Pacífico",
+                    "",
+                    ""
+                ],
+                [
+                    "Viajes",
+                    "$6,274",
+                    "$7,351"
+                ],
+                [
+                    "Local",
+                    "216",
+                    "508"
+                ],
+                [
+                    "Ingresos totales en Asia Pacífico",
+                    "6,490",
+                    "7,859"
+                ],
+                [
+                    "Europa",
+                    "",
+                    ""
+                ],
+                [
+                    "Viajes",
+                    "32,081",
+                    "30,856"
+                ],
+                [
+                    "Local",
+                    "4,817",
+                    "5,293"
+                ],
+                [
+                    "Ingresos totales en Europa",
+                    "36,898",
+                    "36,149"
+                ],
+                [
+                    "América del Norte",
+                    "",
+                    ""
+                ],
+                [
+                    "Viajes",
+                    "57,863",
+                    "56,145"
+                ],
+                [
+                    "Local",
+                    "10,161",
+                    "11,169"
+                ],
+                [
+                    "Ingresos totales en América del Norte",
+                    "68,024",
+                    "67,314"
+                ],
+                [
+                    "Consolidado",
+                    "",
+                    ""
+                ],
+                [
+                    "Viajes",
+                    "96,218",
+                    "94,352"
+                ],
+                [
+                    "Local",
+                    "15,194",
+                    "16,970"
+                ],
+                [
+                    "Ingresos totales",
+                    "$111,412",
+                    "111,322"
+                ]
+            ]
+        },
+        "text": {
+            "paragraph": [
+                "La siguiente tabla establece la descomposición de los ingresos por categoría y segmento. Los ingresos por viajes incluyen publicaciones de viajes (Top 20, Sitio web, Newsflash, Travelzoo Network), cupones de Getaway y la plataforma de hoteles. Los ingresos locales incluyen cupones de ofertas locales y ofertas de entretenimiento (cupones y reservas directas) (en miles).",
+                "Los ingresos por geografía se basan en la dirección de facturación del anunciante. Los activos de larga duración atribuidos a los EE.UU. y a las geografías internacionales se basan en el país en el que se encuentra o se posee el activo."
+            ]
+        },
+        "question": "En 2019, ¿cuántas regiones geográficas tienen ingresos totales de más de $20,000 mil?",
+        "explanation": "Asia Pacífico tiene ingresos totales de $6,490 mil, Europa tiene ingresos totales de $36,898 mil y América del Norte tiene ingresos totales de $68,024 mil. Europa y América del Norte tienen ingresos totales de más de $20,000 mil.",
+        "program": "total_revenues_in_all_regions = {'Asia Pacífico': 6490, 'Europa': 36898, 'América del Norte': 68024}\nregions_have_more_than_20000_thousand_total_revenues = [k for k, v in total_revenues_in_all_regions.items() if v > 20000]\nans = len(regions_have_more_than_20000_thousand_total_revenues)",
+        "link": "\"2019\" links to the column of the table \"2019\".\n\"ingresos totales por regiones geográficas\" links to the rows of the table \"Ingresos totales en Asia Pacífico\", \"Ingresos totales en Europa\", \"Ingresos totales en América del Norte\".",
+        "answer": [
+            2
+        ]
+    },
+    {
+        "table": {
+            "content": [
+                [
+                    "—",
+                    "31 de diciembre de 2019",
+                    "31 de diciembre de 2018"
+                ],
+                [
+                    "Tasa legal federal de los Estados Unidos",
+                    "21.00%",
+                    "21.00%"
+                ],
+                [
+                    "Impuestos estatales, netos del beneficio federal",
+                    "-0.01%",
+                    "1.99%"
+                ],
+                [
+                    "Provisión para valuación",
+                    "-24.33%",
+                    "-21.96%"
+                ],
+                [
+                    "Efecto acumulativo de cambio contable",
+                    "2.07%",
+                    "—"
+                ],
+                [
+                    "Crédito de I+D",
+                    "1.53%",
+                    "1.34%"
+                ],
+                [
+                    "Otros",
+                    "-0.27%",
+                    "-0.38%"
+                ],
+                [
+                    "Tasa efectiva de impuesto sobre la renta",
+                    "-0.01%",
+                    "1.99%"
+                ]
+            ]
+        },
+        "text": {
+            "paragraph": [
+                "Tasa efectiva de impuesto sobre la renta",
+                "A continuación se muestra una conciliación de la tasa legal de impuesto sobre la renta de los Estados Unidos con nuestra tasa efectiva de impuesto sobre la renta:",
+                "En 2019 y 2018 tuvimos pérdidas antes de impuestos de $19,573 y $25,403, respectivamente, que están disponibles para compensar ingresos imponibles futuros. Tomamos decisiones para proporcionar provisiones completas para nuestras pérdidas fiscales netas a fines de 2019 y 2018, incluidas las pérdidas operativas netas generadas durante los años, basándonos en nuestra evaluación de pruebas positivas y negativas, incluida nuestra historia de pérdidas operativas y la incertidumbre de generar ingresos imponibles futuros que nos permitan aprovechar nuestros activos fiscales diferidos."
+            ]
+        },
+        "question": "¿Cuál fue el cambio porcentual en las pérdidas antes de impuestos en 2019?",
+        "explanation": "Las pérdidas antes de impuestos en 2019 son $19,573 y las pérdidas antes de impuestos en 2018 son $25,403. El cambio neto en las pérdidas antes de impuestos es -$5,830. El cambio porcentual es -22.95%.",
+        "program": "pre_tax_losses_2018 = 25403\npre_tax_losses_2019 = 19573\nnet_change = pre_tax_losses_2019 - pre_tax_losses_2018\nans = net_change / pre_tax_losses_2018 * 100",
+        "link": "\"2019 pérdidas antes de impuestos\" y \"2018 pérdidas antes de impuestos\" se enlazan con la parte del texto \"En 2019 y 2018 tuvimos pérdidas antes de impuestos de $19,573 y $25,403, respectivamente\".",
+        "answer": [
+            -22.95
+        ]
+    }
+]

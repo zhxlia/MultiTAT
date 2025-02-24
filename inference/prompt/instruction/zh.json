@@ -1,0 +1,31 @@
+{
+    "Direct": {
+        "prompt": "阅读下面的文本和表格，然后回答一个问题\n这里有几个例子：\n\n---\n\n{examples}\n\n---\n\n根据上面的例子，回答下面的问题。\n请以此格式回答：“答案：<你的答案>”\n\n{example_user}",
+        "example": "{text}\n{table}\n问题：{question}\n答案：{answer}",
+        "user": "{text}\n{table}\n问题：{question}"
+    },
+    "CoT": {
+        "prompt": "阅读下面的文本和表格，然后回答一个问题\n这里有几个例子：\n\n---\n\n{examples}\n\n---\n\n根据上面的例子，回答下面的问题。\n请以此格式回答：“解释：<你的解释>\n答案：<你的答案>”\n\n{example_user}",
+        "example": "{text}\n{table}\n问题：{question}\n解释：{explanation}\n答案：{answer}",
+        "user": "{text}\n{table}\n问题：{question}"
+    },
+    "PoT": {
+        "prompt": "阅读下面的文本和表格，然后编写Python代码来回答一个问题\n这里有几个例子：\n\n---\n\n{examples}\n\n---\n\n根据上面的例子，用Python代码回答以下问题。\n请以此格式回答：“答案：<你的答案>”\n\n{example_user}",
+        "example": "{text}\n{table}\n问题：{question}\n答案：\n```python\n{answer}\n```",
+        "user": "{text}\n{table}\n问题：{question}"
+    },
+    "Decompose": {
+        "prompt": [
+            "请用中文思考，并根据问题从文本和表格中定位相关信息。\n这里有几个例子：\n\n---\n\n{examples}\n\n---\n\n基于上述示例，分析问题。\n请注意，您**只**需要定位相关信息，无需进行额外的计算。\n\n{example_user}",
+            "根据相关信息，您还应该用中文思考并编写Python代码来回答问题。\n这里有几个例子：\n\n---\n\n{examples}\n\n---\n\n基于上述示例，用Python代码回答问题。\n请注意：\n1. 除了数字，尽量使用中文作为答案。\n2. 保持您的答案**简短**，语句尽量少。\n3. 注意可能的负号。\n4. 您必须生成Python代码，而不是直接返回答案。\n用以下格式表示您的答案：\"ans = <your answer>\"\n\n{example_user}"
+        ],
+        "example": [
+            "{text}\n{table}\n问题： {question}\n{answer}\n",
+            "{text}\n{table}\n问题： {question}\n```python\n{answer}\n```"
+        ],
+        "user": [
+            "{text}\n{table}\n问题： {question}",
+            "{text}\n{table}\n问题： {question}"
+        ]
+    }
+}
